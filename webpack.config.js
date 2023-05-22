@@ -1,7 +1,7 @@
-import { resolve } from 'path';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
+const  { resolve } = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-export default {
+module.exports = {
 
   mode : 'development',
   entry : './src/index.tsx',
@@ -19,16 +19,22 @@ export default {
     }),
   ],
   resolve : {
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: ['.tsx', '.ts', '.js', 'jsx'],
   },
   module : {
     rules: [
       {
-        test: /\.(?:ts|mjs|cjs|tsx|js)$/,
+        test: /\.(js|jsx|ts|tsx)$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
         }
+      },
+      {
+        test: /\.m?js/,
+        resolve: {
+          fullySpecified: false,
+        },
       },
       {
         test: /\.s[ac]ss$/i,
