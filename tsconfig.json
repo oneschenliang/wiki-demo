@@ -33,23 +33,13 @@
     "experimentalDecorators": true,
     // 是相对于"baseUrl"进行解析
     "paths": {
-      "@ones-ai/*": [
-        "ones-ai-web-common/packages/*"
-      ]
     },
-    "typeRoots": [
-      "node_modules/@types",
-      "node_modules/@ones-ai/types/globalTypes"
-    ]
   },
   "include": [
     "src/**/*",
-    "ones-ai-web-common/packages/**/*"
   ],
   "exclude": [
     "node_modules",
     "**/node_modules",
-    "**/*.spec.ts",
-    "**/*.min.js",
   ]
 }

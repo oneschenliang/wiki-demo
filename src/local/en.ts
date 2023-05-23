@@ -14,10 +14,27 @@ export const wiki = {
   'wiki.ai.make_shorter': 'Make shorter',
   'wiki.ai.generate_from_selection': 'Generate from selection',
   'wiki.ai.list_action_items': 'List action items',
-  'wiki.ai.translate': 'Translate',
-  'wiki.ai.continue_writing': 'Continue writing',
   
   'wiki.ai.summarize': 'Summarize',
+  'wiki.ai.briefly': 'Briefly',
+  'wiki.ai.exhaustively': 'Exhaustively',
+  
+  'wiki.ai.translate': 'Translate',
+  'wiki.ai.translate_en': 'English',
+  'wiki.ai.translate_ja': 'Japanese',
+  'wiki.ai.translate_zh': 'Chinese',
+  'wiki.ai.translate_thai': 'Thai',
+  
+  'wiki.ai.continue_writing': 'Continue writing',
+  'wiki.ai.next_paragraph': 'Next paragraph',
+  'wiki.ai.outline': 'Outline',
+  'wiki.ai.email': 'Email',
+  'wiki.ai.blog_post': 'Blog post',
+  'wiki.ai.test_cases': 'Test cases',
+  'wiki.ai.requirement_doc': 'Requirement doc',
+  'wiki.ai.development_doc': 'Development doc',
+  'wiki.ai.pros_cons_list': 'Pros and cons list',
+  'wiki.ai.help_guide': 'Help guide',
 
   'commonText.copy': 'Copy',
 }

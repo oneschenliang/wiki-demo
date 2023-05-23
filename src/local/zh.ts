@@ -14,15 +14,27 @@ export const wiki = {
   'wiki.ai.make_shorter': '缩短内容',
   'wiki.ai.generate_from_selection': '基于文本生成内容',
   'wiki.ai.list_action_items': '列出待办事项',
-  'wiki.ai.translate': '翻译',
-  'wiki.ai.continue_writing': '续写',
-
+  
   'wiki.ai.summarize': '总结',
-  // TODO: translate
-  'wiki.ai.briefly': '简要',
-  'wiki.ai.exhaustively': '详尽',
-
+  'wiki.ai.briefly': '简要总结',
+  'wiki.ai.exhaustively': '详细总结',
+  
+  'wiki.ai.translate': '翻译',
+  'wiki.ai.translate_en': '英语',
+  'wiki.ai.translate_ja': '日语',
+  'wiki.ai.translate_zh': '中文',
+  'wiki.ai.translate_thai': '泰语',
+  
+  'wiki.ai.continue_writing': '续写',
+  'wiki.ai.next_paragraph': '下一段落',
+  'wiki.ai.outline': '提纲',
+  'wiki.ai.email': '邮件',
+  'wiki.ai.blog_post': '博客文章',
+  'wiki.ai.test_cases': '测试用例',
+  'wiki.ai.requirement_doc': '需求文档',
+  'wiki.ai.development_doc': '开发文档',
+  'wiki.ai.pros_cons_list': '优劣势列表',
+  'wiki.ai.help_guide': '帮助文档',
 
   'commonText.copy': '复制',
-  
 }
