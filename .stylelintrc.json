@@ -1,4 +1,0 @@
-{
-  "extends": "@ones-ai/stylelint-config",
-  "ignoreFiles": ["**/*.md", "README.md"]
-}
