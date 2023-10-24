@@ -9,6 +9,7 @@ export default defineConfig({
     sourcemap: false,
     outDir: path.resolve(__dirname, './dist'),
   },
+  base: '/wiki-demo/',
   plugins: [
     // createHtmlPlugin({
 
