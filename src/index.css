@@ -11,239 +11,37 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-
-  * {
-    box-sizing: border-box;
-  }
-
-  #layout {
-    height: calc(100vh - 72px);
-    display: flex;
-    width: 100%;
-  }
-  
-  #scroll-container {
-    height: 100%;
-    overflow: auto;
-    flex-grow: 1;
-    flex-basis: 50%;
-   
-    &.coll-editor{
-      flex-shrink: 0;
-    }
-    &.hidden {
-      flex-basis: 0;
-      flex-shrink: 1;
-      flex-grow: 0;
-    }
-  }
-
-  #content {
-    display: flex;
-    flex-direction: row;
-    min-height: 100%;
-  }
-
-  .editor-main {
-    // margin-top: 70px;
-    min-width: 0;
-    flex-grow: 1;
-    position: relative;
-    &.scale {
-      transform: scale(1.5);
-      transform-origin: 0px 0px;
-    }
-  }
-
-  .command-readonly {
-    color: #2d2d2e;
-    background-color: #fff;
-    padding-left: 8px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-  }
-
-  #app {
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-    padding-top: 20px;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    background: white;
-    border-left: #f0f0f0 1px solid;
-    border-right: #f0f0f0 1px solid;
-
-    & > .editor-root {
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-
-      & > .editor-content {
-        flex-grow: 1;
-        padding-left: 50px;
-      }
-    }
-  }
-
-  #top-bar {
-    // position: fixed;
-    width: 100%;
-    background-color: white;
-    // z-index: 10;
-    border-bottom: 1px solid #f0f0f0;
-    // top: 0;
-    flex-shrink: 0;
-    height: 72px;
-
-    #menu-icon {
-      position: absolute;
-      top: 24px;
-      left: 10px;
-      cursor: pointer;
-      & :hover {
-        background-color: #f0f0f0;
-      }
-    }
-
-    #header {
-      display: flex;
-      max-width: 1000px;
-      margin: 16px auto;
-      padding: 0 16px;
-
-      #status {
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-
-        &.clean {
-          background-color: green;
-        }
-        &.dirty {
-          background-color: yellow;
-        }
-      }
-
-      #users {
-        display: flex;
-        flex-direction: row-reverse;
-        flex-grow: 1;
-
-        .avatar {
-          border: 2px solid yellow;
-          border-radius: 50%;
-          width: 32px;
-          height: 32px;
-        }
-
-        .sep {
-          width: 1px;
-          margin: 0 8px;
-          background-color: #f0f0f0;
-        }
-      }
-    }
-  }
 }
 
-#comment {
-  background: #fafafa;
-  flex-shrink: 0;
-  flex-grow: 0;
-  position: relative;
-  width: 300px;
-  // height: calc(100vh - 72px);
-  // right: 0;
-  // top: 0px;
-  // bottom: 0;
-  display: none;
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 20px;
+  min-height: 100%;
+  display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  z-index: 11;
-  &-actions {
-    padding: 10px 0px 10px 10px;
-  }
+  background: white;
+  border-left: #f0f0f0 1px solid;
+  border-right: #f0f0f0 1px solid;
+}
 
-  #mini-comment-container {
-     position: absolute;
-     &.active {
-        right: 300px;
-     }
-  }
+#app > .editor-root {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
 
+#app > .editor-root > .editor-content {
+  flex-grow: 1;
+  padding-left: 50px;
 }
 
 .editor-content {
   background: white;
-}
-
-.version-container-root {
-  background: white;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  .version-header-bar {
-    padding: 0 20px;
-    height: 40px;
-    width: 100%;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    border-bottom: #E8E8E8 1px solid;
-  }
-  .version-container {
-    position: relative;
-    flex: 1;
-    width: 100%;
-  }
-}
-
-.command-m-bar {
-  position: fixed;
-  z-index: 111;
-  bottom: 0;
-  min-height: 40px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: antiquewhite;
-  gap: 20px;
-  padding: 0 20px;
-  // justify-content: space-between;
-  flex-wrap: wrap;
-
-  .command-m-container {
-    display: flex;
-    width: 100%;
-  }
-  .command-item {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .child-layout {
-    height: 300px;
-    width: 100%;
-    display: flex;
-    .child-item {
-      width: 80px;
-      height: 80px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid #ccc;
-    }
-  }
 }
