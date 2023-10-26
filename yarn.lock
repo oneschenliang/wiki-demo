@@ -156,9 +156,9 @@
     turndown "^7.1.1"
 
 "@ones-editor/editor@2.0.2-beta.2":
-  version "2.0.2-beta.1"
-  resolved "https://r.cnpmjs.org/@ones-editor/editor/-/editor-2.0.2-beta.1.tgz#81858276e4a227714c32cef010a6018a66342a3a"
-  integrity sha512-CidAAAUbuxl0pYcueULAzDaISG/0s6OiGOdhT5b7tmF0k0uBL4BWauHCTkcX2G7deE7oqZmInPbArxOU/IbDqA==
+  version "2.0.2-beta.2"
+  resolved "https://r.cnpmjs.org/@ones-editor/editor/-/editor-2.0.2-beta.2.tgz#5a533ce16484c4217860f4db330614733de46fe2"
+  integrity sha512-U91/6YkNGucja0iYpwiSKIbAU/rBgo3QXrUzr8ZCVnM7NVBieeBhbtN8xtAf0fJilv7j6mh+juJ1TzEk6fFk3w==
   dependencies:
     "@better-scroll/core" "^2.5.0"
     "@excalidraw/excalidraw" "0.15.3"
