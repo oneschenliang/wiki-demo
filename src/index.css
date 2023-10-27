@@ -19,11 +19,11 @@ body {
 
 #app {
   box-sizing: border-box;
+  overflow: auto;
   width: 100%;
   max-width: 1000px;
-  margin: auto;
   padding-top: 20px;
-  min-height: 100%;
+  height: calc(100% - 40px);
   display: flex;
   flex-direction: column;
   background: white;
@@ -90,3 +90,5 @@ body {
 #debug #debug-info span {
   word-break: break-all;
 }
+
+
