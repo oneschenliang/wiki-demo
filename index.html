@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
+  <div id="debug">
+    <div id="debug-switch"></div>
+    <ul id="debug-info">
+      <li>visualViewport:
+        <span id="visualViewport"></span>
+      </li>
+      <li>scrollTop:
+        <span id="scrollTop"></span>
+      </li>
+      <li>clientHeight:
+        <span id="clientHeight"></span>
+      </li>
+      <li>bottom:
+        <span id="bottom"></span>
+      </li>
+    </ul>
+  </div>
   <div id="app"></div>
   <script type="module" src="./src/index.ts"></script>
+  <script>
+    const dSwitch = document.getElementById('debug-switch');
+    const info = document.getElementById('debug-info');
+    dSwitch.addEventListener('click', () => {
+      if (info.style.display === 'none') {
+        info.style.display = 'block';
+        dSwitch.classList.add('active');
+      } else {
+        info.style.display = 'none';
+        dSwitch.classList.remove('active');
+      }
+    });
+  </script>
 </body>
+
 </html>

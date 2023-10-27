@@ -45,3 +45,48 @@ body {
 .editor-content {
   background: white;
 }
+
+#debug {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  font-size: 12px;
+  font-family: monospace;
+  color: #666;
+  z-index: 1000;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+#debug-switch {
+  width: 40px;
+  height: 15px;
+  border-radius: 10px;
+  pointer-events: initial;
+  background-color: #f0f0f0;
+}
+#debug-switch::after {
+  content: ' ';
+  display: block;
+  background-color: red;
+  height: 15px;
+  width: 20px;
+  border-radius: 10px;
+}
+
+#debug-switch.active::after {
+  background-color: blue;
+  position: relative;
+  left: 20px;
+}
+
+#debug #debug-info {
+  background: #f0f0f0;
+  display: none;
+}
+
+#debug #debug-info span {
+  word-break: break-all;
+}
