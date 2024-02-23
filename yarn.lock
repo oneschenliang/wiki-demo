@@ -155,10 +155,10 @@
   dependencies:
     turndown "^7.1.1"
 
-"@ones-editor/editor@1.2.0-beta.11":
-  version "1.2.0-beta.11"
-  resolved "https://registry.npmjs.org/@ones-editor/editor/-/editor-1.2.0-beta.11.tgz"
-  integrity sha512-9sSvZtcKmLRfnu6n0Jun4N6cKFRE63xHeKg81lF68DC9RRTG0nzEFZbN0xpuLFxpDTcEqBoqboOSmJNCXjtwBw==
+"@ones-editor/editor@2.1.0-beta.6":
+  version "2.1.0-beta.6"
+  resolved "https://registry.yarnpkg.com/@ones-editor/editor/-/editor-2.1.0-beta.6.tgz#4d4e754852a57e273f43b79cff2a30f5f71ab188"
+  integrity sha512-IqgwVFuBEyiPKOSwdiO/yUDSs9zABs0Shhm78pmtrrpiDv1yRSTvp95ENgrYY/ITxIIx0hOgyjqab6Ws0I/kaA==
   dependencies:
     "@better-scroll/core" "^2.5.0"
     "@excalidraw/excalidraw" "0.15.3"
@@ -192,8 +192,8 @@
     lodash.upperfirst "^4.3.1"
     marked "^4.2.1"
     marked-extended-latex "^1.1.0"
-    markmap-common "^0.15.0"
-    markmap-view "^0.15.0"
+    markmap-common "0.15.3"
+    markmap-view "0.15.4"
     mermaid "^9.1.0"
     mime-db "^1.52.0"
     nanoid "^3.2.0"
@@ -1183,18 +1183,18 @@ marked@^4.2.1:
   resolved "https://r.cnpmjs.org/marked/-/marked-4.3.0.tgz"
   integrity sha512-PRsaiG84bK+AMvxziE/lCFss8juXjNaWzVbN5tXAm4XjeaS9NAHhop+PjQxz2A9h8Q4M/xGmzP8vqNwy6JeK0A==
 
-markmap-common@^0.15.0:
+markmap-common@0.15.3:
   version "0.15.3"
-  resolved "https://r.cnpmjs.org/markmap-common/-/markmap-common-0.15.3.tgz"
+  resolved "https://registry.yarnpkg.com/markmap-common/-/markmap-common-0.15.3.tgz#8282650bbca049b916467ecba6dd8e58408b0c30"
   integrity sha512-a40FfdzFEKoyIhd5KDsV6FfkM55WWi2spRq/cUCsOZd8e4PAHMc9auCEjdxTWRiS2EGzET9sPpvyAmPSTva+/w==
   dependencies:
     "@babel/runtime" "^7.22.6"
     "@gera2ld/jsx-dom" "^2.2.2"
     npm2url "^0.2.1"
 
-markmap-view@^0.15.0:
+markmap-view@0.15.4:
   version "0.15.4"
-  resolved "https://r.cnpmjs.org/markmap-view/-/markmap-view-0.15.4.tgz"
+  resolved "https://registry.yarnpkg.com/markmap-view/-/markmap-view-0.15.4.tgz#a891f70f238671c726d1a5a244b0b6f2a4245c75"
   integrity sha512-6PJnoPZHiQIb0YE+fg0Ht1ptEXgf9QOOTBEiC2DrzjAbZ3rrRa2g+0VhpZ+9vSzDsUa+m/IGz4xkiNepuPfs5w==
   dependencies:
     "@babel/runtime" "^7.22.6"
