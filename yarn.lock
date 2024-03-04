@@ -155,10 +155,10 @@
   dependencies:
     turndown "^7.1.1"
 
-"@ones-editor/editor@2.1.0-beta.6":
-  version "2.1.0-beta.6"
-  resolved "https://registry.yarnpkg.com/@ones-editor/editor/-/editor-2.1.0-beta.6.tgz#4d4e754852a57e273f43b79cff2a30f5f71ab188"
-  integrity sha512-IqgwVFuBEyiPKOSwdiO/yUDSs9zABs0Shhm78pmtrrpiDv1yRSTvp95ENgrYY/ITxIIx0hOgyjqab6Ws0I/kaA==
+"@ones-editor/editor@2.1.1-beta.11":
+  version "2.1.1-beta.11"
+  resolved "https://registry.yarnpkg.com/@ones-editor/editor/-/editor-2.1.1-beta.11.tgz#eb1849921087ec34f1a100541a5634b2e8f13a4b"
+  integrity sha512-DVAWgBBlJrl6v/gsA/JLjc9YfnBf9NRMJjmJORBunm3I+nVML0BfmhMoZxZkoqyG4aC8P8gwrIJImZNrIX43yQ==
   dependencies:
     "@better-scroll/core" "^2.5.0"
     "@excalidraw/excalidraw" "0.15.3"
